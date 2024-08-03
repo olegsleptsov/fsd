@@ -13,7 +13,6 @@ export function UserSelect({
     <label>
       owner:
       <select value={userId} onChange={(e) => onChangeUserId(e.target.value)}>
-        <option></option>
         {users.map((user) => (
           <option value={user.id} key={user.id}>
             {user.name}
